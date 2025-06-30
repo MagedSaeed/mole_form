@@ -688,7 +688,7 @@ def main():
         )
         json_url = st.text_input(
             "Path to json",
-            # placeholder="For example: https://raw.githubusercontent.com/zaidalyafeai/mole_form/refs/heads/main/shami.json",
+            placeholder="For example: https://anonymous.4open.science/api/repo/mole_form-E72A/file/shami.json?v=31f9770d",
         )
 
         if upload_file:
