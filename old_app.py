@@ -340,7 +340,6 @@ def final_state():
             else:
                 save_path = st.text_input(
                     "Save Path",
-                    value=f"/Users/zaidalyafeai/Documents/Development/masader_bot/validset/{st.session_state['Name'].lower()}.json",
                     help="Enter the directory path to save the JSON file",
                 )
                 if save_path:
@@ -554,7 +553,7 @@ def main():
 
     if st.session_state.show_form:
         with st.form(key="dataset_form"):
-            create_element("GitHub username*", key="gh_username", value="zaidalyafeai")
+            create_element("GitHub username*", key="gh_username", value="<Github_Username>")
 
             create_element(
                 "Name of the dataset*",

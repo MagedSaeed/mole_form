@@ -684,11 +684,11 @@ def main():
     if options == "🚥 Load Annotation":
         upload_file = st.file_uploader(
             "Upload Json",
-            help="You can use this widget to preload any dataset from https://github.com/ARBML/masader/tree/main/datasets",
+            help="You can use this widget to preload any dataset from github-repo",
         )
         json_url = st.text_input(
             "Path to json",
-            placeholder="For example: https://raw.githubusercontent.com/zaidalyafeai/mole_form/refs/heads/main/shami.json",
+            # placeholder="For example: https://raw.githubusercontent.com/zaidalyafeai/mole_form/refs/heads/main/shami.json",
         )
 
         if upload_file:
@@ -766,7 +766,7 @@ def main():
             with st.container(height=height):
                 with st.form(key="dataset_form", border=False):
                     create_element(
-                        "GitHub username*", key="gh_username", value="zaidalyafeai"
+                        "GitHub username*", key="gh_username", value="<Github_Username>"
                     )
                     for key in columns:
                         if key == "annotations_from_paper":
